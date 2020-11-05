@@ -1,0 +1,13 @@
+$background-color: #111;
+$text-color: #fff;
+
+header {
+    background-color: $background-color;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $text-color;
+}
