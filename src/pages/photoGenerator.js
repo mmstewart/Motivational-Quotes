@@ -39,8 +39,7 @@ function PhotoGenerator() {
 						/>
 						{/* Credits to the rightful owner of the photo */}
 						<div className="credit">
-							Photo by{' '}
-							{/* Clickable link that links to the right owner of the photo dynamically */}
+							Photo by {/* Clickable link that links to the right owner of the photo dynamically */}
 							<a
 								className="credit-link"
 								style={{

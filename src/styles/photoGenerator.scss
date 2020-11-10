@@ -10,6 +10,16 @@
     bottom: 70px;
     margin-left: 50px;
     color: #b1b1b1;
+
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 /* Link credit to owner of photo */
@@ -41,6 +51,14 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out 0s;
+
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
 }
