@@ -1,0 +1,13 @@
+$background-color: #111;
+$text-color: #fff;
+
+/* Footer positioning */
+footer {
+    color: $text-color;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}

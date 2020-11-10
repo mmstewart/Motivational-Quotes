@@ -1,0 +1,46 @@
+/* Adds padding and border to any element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Positioning of credit link */
+.credit {
+    float: left;
+    position: absolute;
+    bottom: 70px;
+    margin-left: 50px;
+    color: #b1b1b1;
+}
+
+/* Link credit to owner of photo */
+.credit-link {
+    color: #707070;
+    transition: all 1s ease-in-out 0s;
+}
+
+/* On Hover Effect of link credit */
+.credit-link:hover,
+.credit-link:focus {
+    color: #000000;
+    transition: all 1s ease-in-out 0s;
+}
+
+/* put unsplash image behind all classes/fixed position */
+#unsplash-image {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+/* Fits unsplash image on any desktop screen */
+.imgs {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0s;
+}
