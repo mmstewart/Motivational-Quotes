@@ -7,7 +7,7 @@ import '../styles/photoGenerator.scss';
 
 function PhotoGenerator() {
 	const url =
-		'https://api.unsplash.com/photos/random/?client_id=ijz5iajfeXo7ntCEX7bW8zKPW97865zCJ-18TcC57bQ&count=1&query=winter-mountains-day&orientation=landscape&content_filter=high&auto=compress&q=60';
+		'https://api.unsplash.com/photos/random/?client_id=ijz5iajfeXo7ntCEX7bW8zKPW97865zCJ-18TcC57bQ&count=1&orientation=landscape&content_filter=high&auto=compress&q=60&collections=83924525';
 	const [imagez, setImage] = useState([]);
 
 	const getImage = () => {
@@ -46,7 +46,6 @@ function PhotoGenerator() {
 									fontWeight: 'bolder',
 									zIndex: 3,
 									fontFamily: 'Montserrat, sans-serif',
-									textDecoration: 'none',
 								}}
 								href={img.links.html}
 							>
