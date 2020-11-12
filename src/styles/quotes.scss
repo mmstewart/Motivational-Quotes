@@ -1,0 +1,87 @@
+$text-color: #fff;
+$background: #fff;
+$shadow-color: #111;
+$button-color: #000;
+
+/* White box filled with quote and buttons */
+.quote-box {
+    background: rgba(255, 255, 255, 1);
+    width: 40rem;
+    margin: 12rem auto;
+    padding: 4rem;
+    border-radius: 10px;
+    mix-blend-mode: normal;
+    box-shadow: 0 10px 15px $shadow-color;
+
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+/* Quote of quote box */
+#text {
+    margin-bottom: 1.5rem;
+}
+
+/* Author of quote box */
+#author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Spacing and display of social media icons and button */
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/* Formatting and display of social media buttons */
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Spacing of social media buttons */
+.social-media>a {
+    padding: .3rem .5rem;
+    cursor: pointer;
+    transition: all .6s ease-in-out 0s;
+}
+
+/* Social media icons on hover */
+.social-media>a:hover {
+    opacity: .3;
+    transition: all .6s ease-in-out 0s;
+}
+
+/* Width of social media icons*/
+.social-media>a img {
+    width: 1.75rem;
+}
+
+/* Generate quote button */
+#new-quote {
+    background: $background;
+    color: $button-color;
+    padding: .7rem 1rem;
+    font-size: 14px;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: all 1s ease-in-out 0s;
+}
+
+/* Button on Hover */
+#new-quote:hover {
+    opacity: .5;
+    transition: all 1s ease-in-out 0s;
+}
