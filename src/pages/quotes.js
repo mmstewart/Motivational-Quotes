@@ -22,7 +22,8 @@ const Quotes = () => {
 				let randomNum = Math.floor(Math.random() * dataQuotes.length);
 				/* Access the random number of the json file to output quote and author */
 				let randomQuote = dataQuotes[randomNum];
-				console.log(randomQuote);
+				setQuote(randomQuote.quote);
+				setAuthor(randomQuote.author);
 			});
 	};
 
@@ -57,7 +58,7 @@ const Quotes = () => {
 						fontWeight: 900,
 					}}
 				>
-					Test
+					{quote}
 				</p>
 			</div>
 			<div id="author">
@@ -65,20 +66,30 @@ const Quotes = () => {
 					style={{
 						fontFamily: 'Montserrat, sans-serif',
 						fontSize: '20px',
+						fontWeight: 600,
 					}}
 				>
-					Author
+					{author}
 				</p>
 			</div>
 
 			<div id="buttons">
 				<div className="social-media">
-					<a href="#" id="tweet-quote">
+					<a
+						onClick={() => {
+							window.open(
+								'https://twitter.com/intent/tweet/?text=' +
+									encodeURIComponent(quote + ' \n\n-' + author + '\n\nvia reason.netlify.com')
+							);
+						}}
+						href="/#"
+						id="tweet-quote"
+					>
 						<span>
 							<img src={twitterIcon} alt="" />
 						</span>
 					</a>
-					<a href="#" id="facebook-quote">
+					<a href="/#" id="facebook-quote">
 						<span>
 							<img src={facebookIcon} alt="" />
 						</span>

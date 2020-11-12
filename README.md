@@ -16,6 +16,8 @@
 - [Google Font Loader](https://www.npmjs.com/package/react-google-font-loader)
 - [Unsplash Developers](https://unsplash.com/developers)
 - [Lazy Load Images](https://www.youtube.com/watch?reload=9&v=0-Ze5dEgVFk)
+- [Icons](https://icons8.com/)
+- [Random Quote Generator](https://www.youtube.com/watch?v=ma_K5kvTfQc)
 
 ## 💜 Acknowledgments
 
