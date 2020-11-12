@@ -27,12 +27,32 @@ $button-color: #000;
 /* Quote of quote box */
 #text {
     margin-bottom: 1.5rem;
+
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 /* Author of quote box */
 #author {
     display: flex;
     justify-content: flex-end;
+
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 /* Spacing and display of social media icons and button */
@@ -48,6 +68,16 @@ $button-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 /* Spacing of social media buttons */
@@ -79,6 +109,16 @@ $button-color: #000;
     outline: none;
     cursor: pointer;
     transition: all 1s ease-in-out 0s;
+
+    -webkit-animation: fadein 1s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 1s;
+    /* Internet Explorer */
+    -o-animation: fadein 1s;
+    /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 /* Button on Hover */
