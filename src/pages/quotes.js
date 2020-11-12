@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GoogleFontLoader from 'react-google-font-loader';
 import twitterIcon from '../images/twitter.png';
-import facebookIcon from '../images/facebook.png';
 
 import '../styles/quotes.scss';
 
@@ -79,19 +78,17 @@ const Quotes = () => {
 						onClick={() => {
 							window.open(
 								'https://twitter.com/intent/tweet/?text=' +
-									encodeURIComponent(quote + ' \n\n-' + author + '\n\nvia reason.netlify.com')
+									encodeURIComponent(
+										quote + ' \n\n-' + author + '\n\nvia https://reason-quotes.netlify.app/'
+									)
 							);
 						}}
 						href="/#"
 						id="tweet-quote"
+						title="Share on Twitter"
 					>
 						<span>
 							<img src={twitterIcon} alt="" />
-						</span>
-					</a>
-					<a href="/#" id="facebook-quote">
-						<span>
-							<img src={facebookIcon} alt="" />
 						</span>
 					</a>
 				</div>
