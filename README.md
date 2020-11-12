@@ -3,11 +3,9 @@
 
 <p align=center> Motivational quotes and powerful images to help motivate you throughout the day. Made with React. ❤️ </p>
 
-<br/>
+<p align=center><a href="https://reason-quotes.netlify.app/"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&style=flat-square&up_color=green&up_message=online&url=https%3A%2F%2Freason-quotes.netlify.app%2F"></a></p>
 
 ![reason](https://user-images.githubusercontent.com/36175538/99006609-5d498f00-2508-11eb-8dcd-655c34411daf.PNG)
-
-<p align=center><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&style=flat-square&up_color=green&up_message=online&url=https%3A%2F%2Freason-quotes.netlify.app%2F"></p>
 
 ## 🤓 Author
 
