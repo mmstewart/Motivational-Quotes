@@ -19,7 +19,7 @@ let collections = 83924525;
 
 function PhotoGenerator() {
 	/* Your unsplash.com/developers api key */
-	const key = 'ijz5iajfeXo7ntCEX7bW8zKPW97865zCJ-18TcC57bQ';
+	const key = '';
 
 	/* Amount of photos on page. Set at 1. Not recommended to put more photos on page */
 	const count = 1;
