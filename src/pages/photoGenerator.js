@@ -41,6 +41,7 @@ function PhotoGenerator() {
 		quality +
 		'&collections=' +
 		collections;
+
 	const [imagez, setImage] = useState([]);
 
 	/* Gets the single image from our collection */
