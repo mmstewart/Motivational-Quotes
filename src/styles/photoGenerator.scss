@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Montserrat, sans-serif';
+    src: local('Montserrat'), local('Montserrat');
+    font-display: swap;
+}
+
 /* Positioning of credit link */
 .credit {
     float: left;

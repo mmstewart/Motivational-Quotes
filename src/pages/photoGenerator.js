@@ -37,7 +37,7 @@ function PhotoGenerator() {
 		orientation +
 		'&content_filter=' +
 		content_filter +
-		'&auto=compress&q=' +
+		'&auto=format&q=' +
 		quality +
 		'&collections=' +
 		collections;
@@ -48,6 +48,13 @@ function PhotoGenerator() {
 	const getImage = () => {
 		Axios.get(url).then((res) => {
 			setImage(res.data);
+			saveNextImage();
+		});
+	};
+
+	const saveNextImage = () => {
+		Axios.get(url).then((img) => {
+			localStorage.setItem('savedBackground', JSON.stringify(img));
 		});
 	};
 
@@ -63,9 +70,9 @@ function PhotoGenerator() {
 	}
 	return (
 		<div id="root">
-			{imagez.map((img) => {
+			{imagez.map((img, i) => {
 				return (
-					<div>
+					<div key={i}>
 						{/* Minimalistic font from Google Fonts */}
 						<GoogleFontLoader
 							fonts={[
@@ -76,9 +83,10 @@ function PhotoGenerator() {
 							]}
 						/>
 						{/* Credits to the rightful owner of the photo */}
-						<div className="credit">
+						<div className="credit" style={{ fontFamily: 'Montserrat, sans-serif' }}>
 							Photo by {/* Clickable link that links to the right owner of the photo dynamically */}
 							<a
+								rel="preconnect"
 								className="credit-link"
 								style={{
 									fontWeight: 'bolder',
