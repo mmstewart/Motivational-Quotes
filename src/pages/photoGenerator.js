@@ -2,30 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Axios from 'axios';
 import GoogleFontLoader from 'react-google-font-loader';
-
+import { API_KEY } from '../Base';
 import '../styles/photoGenerator.scss';
 
 /* Safety Filter of photos. Other option is low */
 let content_filter = 'high';
 
-/* Quality of photos. Default: 75 */
-let quality = 60;
+/* Quality of photos. Default: 80 */
+let quality = 80;
 
 /* Collection id number of photos from unsplash.com */
-let collections = 83924525;
-
-/* Search term of photos. Replace with collectio ns. Example: query=snowy-mountains */
-//let query = 'winter-mountains';
+//let collections = 83924525;
 
 function PhotoGenerator() {
 	/* Your unsplash.com/developers api key */
-	const key = '';
+	const key = API_KEY;
 
 	/* Amount of photos on page. Set at 1. Not recommended to put more photos on page */
 	const count = 1;
-
-	/* Set orientation of photos. Not recommended to put in portrait and squarish */
-	const orientation = 'landscape';
 
 	/* API URL */
 	const url =
@@ -33,22 +27,19 @@ function PhotoGenerator() {
 		key +
 		'&count=' +
 		count +
-		'&orientation=' +
-		orientation +
 		'&content_filter=' +
 		content_filter +
-		'&auto=format&q=' +
+		'&q=' +
 		quality +
-		'&collections=' +
-		collections;
+		'&cs=tinysrgb&fit=max&fm=jpg&crop=entropy';
 
 	const [imagez, setImage] = useState([]);
 
 	/* Gets the single image from our collection */
 	const getImage = () => {
 		Axios.get(url).then((res) => {
-			setImage(res.data);
 			saveNextImage();
+			setImage(res.data);
 		});
 	};
 
@@ -101,7 +92,7 @@ function PhotoGenerator() {
 
 						<div id="unsplash-image">
 							{/* Generates dynamic images from Unsplash*/}
-							<LazyLoadImage src={img.urls.raw} className="imgs" alt={img.alt_description} />
+							<LazyLoadImage src={img.urls.regular} className="imgs" alt={img.alt_description} />
 						</div>
 					</div>
 				);
