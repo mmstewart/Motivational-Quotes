@@ -11,9 +11,6 @@ let content_filter = 'high';
 /* Quality of photos. Default: 80 */
 let quality = 80;
 
-/* Collection id number of photos from unsplash.com */
-//let collections = 83924525;
-
 function PhotoGenerator() {
 	/* Your unsplash.com/developers api key */
 	const key = API_KEY;
@@ -31,7 +28,7 @@ function PhotoGenerator() {
 		content_filter +
 		'&q=' +
 		quality +
-		'&cs=tinysrgb&fit=max&fm=jpg&crop=entropy';
+		'&cs=tinysrgb&query=nature&fit=max&fm=jpg&crop=entropy';
 
 	const [imagez, setImage] = useState([]);
 

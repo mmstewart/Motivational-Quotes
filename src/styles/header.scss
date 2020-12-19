@@ -10,6 +10,7 @@ header {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: $text-color;
+    mix-blend-mode: difference;
 
     -webkit-animation: fadein 1s;
     /* Safari, Chrome and Opera > 12.1 */
