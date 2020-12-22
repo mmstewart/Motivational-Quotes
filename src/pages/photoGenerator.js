@@ -8,8 +8,8 @@ import '../styles/photoGenerator.scss';
 /* Safety Filter of photos. Other option is low */
 let content_filter = 'high';
 
-/* Quality of photos. Default: 80 */
-let quality = 80;
+/* Quality of photos. Default: 75 */
+let quality = 75;
 
 function PhotoGenerator() {
 	/* Your unsplash.com/developers api key */
@@ -28,7 +28,11 @@ function PhotoGenerator() {
 		content_filter +
 		'&q=' +
 		quality +
-		'&cs=tinysrgb&query=nature&fit=max&fm=jpg&crop=entropy';
+		'&w=' +
+		window.innerWidth +
+		'&h=' +
+		window.innerHeight +
+		'&cs=tinysrgb&collections=75711168&fit=max&fm=jpg&crop=entropy';
 
 	const [imagez, setImage] = useState([]);
 
