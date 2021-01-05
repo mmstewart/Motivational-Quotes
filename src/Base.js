@@ -1,1 +1,1 @@
-export const API_KEY = process.env.GATSBY_GOOGLE_API_KEY;
+export const API_KEY = "ijz5iajfeXo7ntCEX7bW8zKPW97865zCJ-18TcC57bQ";

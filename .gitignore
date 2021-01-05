@@ -7,7 +7,9 @@
 
 #api key
 .env
-.end.production
+.env.production
+.env.development
+Base.js
 
 # testing
 /coverage
