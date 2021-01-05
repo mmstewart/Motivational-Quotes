@@ -15,7 +15,7 @@ function PhotoGenerator() {
 	/* Your unsplash.com/developers api key */
 	const key = API_KEY;
 
-	/* Amount of photos on page. Set at 1. Not recommended to put more photos on page */
+	/* Amount of photos on page. Set at 1. Do NOT put more photos on page */
 	const count = 1;
 
 	/* API URL */
