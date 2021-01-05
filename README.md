@@ -5,7 +5,7 @@
 
 <p align=center><a href="https://reason-quotes.netlify.app/"><img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&style=flat-square&up_color=green&up_message=online&url=https%3A%2F%2Freason-quotes.netlify.app%2F"></a></p>
 
-![reason](https://user-images.githubusercontent.com/36175538/99006609-5d498f00-2508-11eb-8dcd-655c34411daf.PNG)
+![reason-quotes](https://user-images.githubusercontent.com/36175538/103605829-879d4480-4eda-11eb-9396-88d17b17a5e4.PNG)
 
 ## 🤓 Author
 
