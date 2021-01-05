@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Axios from 'axios';
 import GoogleFontLoader from 'react-google-font-loader';
+import { API_KEY } from '../Base';
 import '../styles/photoGenerator.scss';
 
 /* Safety Filter of photos. Other option is low */
@@ -12,7 +13,7 @@ let quality = 75;
 
 function PhotoGenerator() {
 	/* Your unsplash.com/developers api key */
-	const key = process.env.API_KEY;
+	const key = API_KEY;
 
 	/* Amount of photos on page. Set at 1. Do NOT put more photos on page */
 	const count = 1;
